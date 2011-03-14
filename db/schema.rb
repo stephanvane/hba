@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110312133948) do
+ActiveRecord::Schema.define(:version => 20110314174614) do
 
   create_table "boats", :force => true do |t|
     t.string "name"
@@ -19,5 +19,10 @@ ActiveRecord::Schema.define(:version => 20110312133948) do
   end
 
   add_index "boats", ["slug"], :name => "index_boats_on_slug", :unique => true
+
+  create_table "photos", :force => true do |t|
+    t.string  "file"
+    t.integer "boat_id"
+  end
 
 end

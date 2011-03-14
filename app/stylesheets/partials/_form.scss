@@ -3,11 +3,13 @@
 // forms from scratch if you need to.
 
 form.bp {
-  @include blueprint-form;
-  @include blueprint-inline-form;
+
 }
 
-form#new_boat {
+form.new_boat, form.edit_boat {
+  @include blueprint-form;
+  @include blueprint-inline-form;
+  
   .label {
     @include column(3);
   }

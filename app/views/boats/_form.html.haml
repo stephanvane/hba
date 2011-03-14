@@ -1,4 +1,4 @@
-= form_for @boat, :html => { :class => 'bp' } do |f|
+= form_for @boat, :html => { :multipart => true } do |f|
   .label
     = f.label :name
   .field
@@ -7,6 +7,14 @@
     = f.label :slug
   .field
     = f.text_field :slug
+  .label
+    = f.label :photos
+  .field
+    = file_field_tag 'boat[photos_attributes][][file]', :multiple => true
+  %div
+    - @boat.photos.each do |p|
+      = image_tag p.file.url(:thumb)
+    
   .label
     = f.label :description
   .field
