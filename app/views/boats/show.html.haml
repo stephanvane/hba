@@ -1,3 +1,6 @@
+- content_for :menu do
+  = link_to 'Edit', :action => :edit
+
 %h2= @boat.name
 
 %p= @boat.description

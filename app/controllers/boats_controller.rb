@@ -13,11 +13,23 @@ class BoatsController < ApplicationController
       redirect_to :action => :index
     else
       render :new
-      puts @boat.errors
     end
   end
   
   def show
     @boat = Boat.find_by_slug(params[:id])
+  end
+  
+  def edit
+    @boat = Boat.find_by_slug(params[:id])
+  end
+  
+  def update
+    @boat = Boat.find_by_slug(params[:id])
+    if @boat.update_attributes(params[:boat])
+      redirect_to @boat
+    else
+      render :edit
+    end
   end
 end

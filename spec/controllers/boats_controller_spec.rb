@@ -10,15 +10,15 @@ describe BoatsController do
     end
   end
   
-  describe 'get new' do
+  describe 'GET new' do
     it 'should be successfull' do
       get 'new'
-      
+      should assign_to(:boat)
       should respond_with :success
     end
   end
   
-  describe 'create new' do
+  describe 'POST new' do
     
     describe 'success' do
       
@@ -36,5 +36,23 @@ describe BoatsController do
       get :show, :id => boat.slug
       should respond_with :success
     }
+  end
+  
+  describe 'GET edit' do
+    it {
+      boat = Factory(:boat)
+      get :edit, :id => boat.slug
+    }
+  end
+  
+  describe 'PUT update' do
+    it 'should successfully update a boat' do
+      boat = Factory(:boat)
+      boat.description = 'new description'
+      put :update, :id => boat.slug, :boat => boat.attributes
+      should redirect_to boat
+      
+      Boat.find(boat.id).description.should == 'new description'
+    end
   end
 end
