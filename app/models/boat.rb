@@ -5,6 +5,8 @@ class Boat < ActiveRecord::Base
   has_many :photos
   accepts_nested_attributes_for :photos
   
+  paginates_per 5
+  
   def to_param
     slug
   end

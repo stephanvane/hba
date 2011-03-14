@@ -81,7 +81,7 @@ a img {
   border: none;
 }
 
-/* line 10, ../../../app/stylesheets/partials/_page.scss */
+/* line 11, ../../../app/stylesheets/partials/_page.scss */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -389,7 +389,7 @@ body.bp .removed {
   background: #990000;
   color: white;
 }
-/* line 17, ../../../app/stylesheets/partials/_page.scss */
+/* line 18, ../../../app/stylesheets/partials/_page.scss */
 body.bp .container {
   width: 950px;
   margin: 0 auto;
@@ -402,13 +402,25 @@ body.bp .container {
   -webkit-box-shadow: #333333 1px 1px 5px 0;
   -o-box-shadow: #333333 1px 1px 5px 0;
   box-shadow: #333333 1px 1px 5px 0;
+  -moz-border-radius-bottomleft: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -o-border-bottom-left-radius: 15px;
+  -ms-border-bottom-left-radius: 15px;
+  -khtml-border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -o-border-bottom-right-radius: 15px;
+  -ms-border-bottom-right-radius: 15px;
+  -khtml-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   min-height: 500px;
 }
-/* line 26, ../../../app/stylesheets/partials/_page.scss */
+/* line 28, ../../../app/stylesheets/partials/_page.scss */
 body.bp .content {
   padding: 10px;
 }
-/* line 30, ../../../app/stylesheets/partials/_page.scss */
+/* line 32, ../../../app/stylesheets/partials/_page.scss */
 body.bp #menu {
   display: inline;
   float: left;
@@ -419,7 +431,7 @@ body.bp #menu {
 * html body.bp #menu {
   overflow-x: hidden;
 }
-/* line 34, ../../../app/stylesheets/partials/_page.scss */
+/* line 36, ../../../app/stylesheets/partials/_page.scss */
 body.bp #main {
   display: inline;
   float: left;

@@ -1,6 +1,7 @@
 class BoatsController < ApplicationController
   def index
-    @boats = Boat.all
+    @all = Boat.select([:name, :slug]).all
+    @boats = Boat.page params[:page]
   end
   
   def new

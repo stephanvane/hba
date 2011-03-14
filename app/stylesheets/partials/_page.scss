@@ -1,6 +1,7 @@
 // Import the non-default scaffolding module to help us get started.
 @import "blueprint/scaffolding";
 @import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
 
 // This configuration will only apply the
 // blueprint styles to pages with a body class of "bp"
@@ -20,6 +21,7 @@ body.bp {
     background: white;
     margin: auto;
     @include box-shadow();
+    @include border-bottom-radius(15px);
     min-height: 500px;
   }
   

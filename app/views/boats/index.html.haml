@@ -1,4 +1,11 @@
-%h2 Boats
+%h2 All Houseboats
 
-- @boats.each do |boat|
-  = link_to boat.name, boat
+- content_for :menu do
+  %ul
+    - @all.each do |boat|
+      %li= link_to boat.name, boat
+
+%ul
+  - @boats.each do |boat|
+    %li= link_to boat.name, boat
+= paginate @boats

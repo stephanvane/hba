@@ -16,6 +16,8 @@ gem "compass", ">= 0.10.6"
 gem 'carrierwave'
 gem 'mini_magick'
 
+gem 'kaminari'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
