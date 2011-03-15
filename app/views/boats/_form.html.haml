@@ -3,20 +3,31 @@
     = f.label :name
   .field
     = f.text_field :name
+
   .label
     = f.label :slug
   .field
     = f.text_field :slug
+    
+  .label
+    = f.label :banner
+  .field
+    = f.file_field :banner
+    - if @boat.banner?
+      %div= image_tag @boat.banner.url()
+
   .label
     = f.label :photos
   .field
     = file_field_tag 'boat[photos_attributes][][file]', :multiple => true
-  %div
-    - @boat.photos.each do |p|
-      = image_tag p.file.url(:thumb)
+    - if @boat.photos.any?
+      %div
+        - @boat.photos.each do |p|
+          = image_tag p.file.url(:thumb)
     
   .label
     = f.label :description
   .field
     = f.text_area :description
+
   = f.submit

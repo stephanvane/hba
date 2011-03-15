@@ -17,6 +17,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'kaminari'
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'

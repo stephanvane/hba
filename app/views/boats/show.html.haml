@@ -1,6 +1,16 @@
 - content_for :menu do
   = link_to 'Edit', :action => :edit
-
+  
+:javascript
+  $(function() {
+    $('#gallery').PikaChoose({carousel: true});
+  });
 %h2= @boat.name
+= image_tag @boat.banner.url
 
 %p= @boat.description
+
+- if @boat.photos.any?
+  %ul#gallery.jcarousel-skin-pika
+    - @boat.photos.each do |p|
+      %li= image_tag p.file.url

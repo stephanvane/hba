@@ -5,7 +5,11 @@
     - @all.each do |boat|
       %li= link_to boat.name, boat
 
-%ul
+%ul.items
   - @boats.each do |boat|
-    %li= link_to boat.name, boat
+    %li
+      = link_to image_tag(boat.banner.url(:thumb)), boat
+      .info
+        %h3= link_to boat.name, boat
+        asdfasdf
 = paginate @boats

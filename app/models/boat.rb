@@ -5,6 +5,8 @@ class Boat < ActiveRecord::Base
   has_many :photos
   accepts_nested_attributes_for :photos
   
+  mount_uploader :banner, BannerUploader
+  
   paginates_per 5
   
   def to_param
