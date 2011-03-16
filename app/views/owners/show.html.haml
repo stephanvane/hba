@@ -1,0 +1,9 @@
+- content_for :menu do
+  %ul
+    %li= link_to 'Edit', :action => :edit
+
+%h2= @owner.name
+
+%ul
+  - @owner.boats.each do |boat|
+    %li= link_to boat.name, boat
