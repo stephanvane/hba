@@ -516,94 +516,94 @@ body.bp form.inline p {
 }
 
 /* line 1, ../../../app/stylesheets/partials/_form.scss */
-form.new_boat, form.edit_boat {
+form.new_boat, form.edit_boat, form.new_owner, form.edit_owner {
   line-height: 3;
 }
 /* line 18, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat label, form.edit_boat label {
+form.new_boat label, form.edit_boat label, form.new_owner label, form.edit_owner label {
   font-weight: bold;
 }
 /* line 19, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat fieldset, form.edit_boat fieldset {
+form.new_boat fieldset, form.edit_boat fieldset, form.new_owner fieldset, form.edit_owner fieldset {
   padding: 1.4em;
   margin: 0 0 1.5em 0;
 }
 /* line 20, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat legend, form.edit_boat legend {
+form.new_boat legend, form.edit_boat legend, form.new_owner legend, form.edit_owner legend {
   font-weight: bold;
   font-size: 1.2em;
 }
 /* line 26, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat input.text, form.new_boat input.title, form.new_boat input[type=email], form.new_boat input[type=text], form.new_boat input[type=password], form.edit_boat input.text, form.edit_boat input.title, form.edit_boat input[type=email], form.edit_boat input[type=text], form.edit_boat input[type=password] {
+form.new_boat input.text, form.new_boat input.title, form.new_boat input[type=email], form.new_boat input[type=text], form.new_boat input[type=password], form.edit_boat input.text, form.edit_boat input.title, form.edit_boat input[type=email], form.edit_boat input[type=text], form.edit_boat input[type=password], form.new_owner input.text, form.new_owner input.title, form.new_owner input[type=email], form.new_owner input[type=text], form.new_owner input[type=password], form.edit_owner input.text, form.edit_owner input.title, form.edit_owner input[type=email], form.edit_owner input[type=text], form.edit_owner input[type=password] {
   margin: 0.5em 0;
   background-color: white;
   padding: 5px;
 }
 /* line 27, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat input.title, form.edit_boat input.title {
+form.new_boat input.title, form.edit_boat input.title, form.new_owner input.title, form.edit_owner input.title {
   font-size: 1.5em;
 }
 /* line 31, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat input[type=checkbox], form.new_boat input.checkbox, form.new_boat input[type=radio], form.new_boat input.radio, form.edit_boat input[type=checkbox], form.edit_boat input.checkbox, form.edit_boat input[type=radio], form.edit_boat input.radio {
+form.new_boat input[type=checkbox], form.new_boat input.checkbox, form.new_boat input[type=radio], form.new_boat input.radio, form.edit_boat input[type=checkbox], form.edit_boat input.checkbox, form.edit_boat input[type=radio], form.edit_boat input.radio, form.new_owner input[type=checkbox], form.new_owner input.checkbox, form.new_owner input[type=radio], form.new_owner input.radio, form.edit_owner input[type=checkbox], form.edit_owner input.checkbox, form.edit_owner input[type=radio], form.edit_owner input.radio {
   position: relative;
   top: 0.25em;
 }
 /* line 33, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat textarea, form.edit_boat textarea {
+form.new_boat textarea, form.edit_boat textarea, form.new_owner textarea, form.edit_owner textarea {
   margin: 0.5em 0;
   padding: 5px;
 }
 /* line 34, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat select, form.edit_boat select {
+form.new_boat select, form.edit_boat select, form.new_owner select, form.edit_owner select {
   margin: 0.5em 0;
 }
 /* line 59, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat fieldset, form.edit_boat fieldset {
+form.new_boat fieldset, form.edit_boat fieldset, form.new_owner fieldset, form.edit_owner fieldset {
   border: 1px solid #cccccc;
 }
 /* line 62, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.new_boat input.text, form.new_boat input.title, form.new_boat input[type=email], form.new_boat input[type=text], form.new_boat input[type=password],
-form.new_boat textarea, form.new_boat select, form.edit_boat input.text, form.edit_boat input.title, form.edit_boat input[type=email], form.edit_boat input[type=text], form.edit_boat input[type=password], form.edit_boat textarea, form.edit_boat select {
+form.new_boat textarea, form.new_boat select, form.edit_boat input.text, form.edit_boat input.title, form.edit_boat input[type=email], form.edit_boat input[type=text], form.edit_boat input[type=password], form.edit_boat textarea, form.edit_boat select, form.new_owner input.text, form.new_owner input.title, form.new_owner input[type=email], form.new_owner input[type=text], form.new_owner input[type=password], form.new_owner textarea, form.new_owner select, form.edit_owner input.text, form.edit_owner input.title, form.edit_owner input[type=email], form.edit_owner input[type=text], form.edit_owner input[type=password], form.edit_owner textarea, form.edit_owner select {
   border: 1px solid #bbbbbb;
 }
 /* line 64, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.new_boat input.text:focus, form.new_boat input.title:focus, form.new_boat input[type=email]:focus, form.new_boat input[type=text]:focus, form.new_boat input[type=password]:focus,
-form.new_boat textarea:focus, form.new_boat select:focus, form.edit_boat input.text:focus, form.edit_boat input.title:focus, form.edit_boat input[type=email]:focus, form.edit_boat input[type=text]:focus, form.edit_boat input[type=password]:focus, form.edit_boat textarea:focus, form.edit_boat select:focus {
+form.new_boat textarea:focus, form.new_boat select:focus, form.edit_boat input.text:focus, form.edit_boat input.title:focus, form.edit_boat input[type=email]:focus, form.edit_boat input[type=text]:focus, form.edit_boat input[type=password]:focus, form.edit_boat textarea:focus, form.edit_boat select:focus, form.new_owner input.text:focus, form.new_owner input.title:focus, form.new_owner input[type=email]:focus, form.new_owner input[type=text]:focus, form.new_owner input[type=password]:focus, form.new_owner textarea:focus, form.new_owner select:focus, form.edit_owner input.text:focus, form.edit_owner input.title:focus, form.edit_owner input[type=email]:focus, form.edit_owner input[type=text]:focus, form.edit_owner input[type=password]:focus, form.edit_owner textarea:focus, form.edit_owner select:focus {
   border: 1px solid #666666;
 }
 /* line 48, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat input.text, form.new_boat input.title, form.new_boat input[type=email], form.new_boat input[type=text], form.new_boat input[type=password], form.edit_boat input.text, form.edit_boat input.title, form.edit_boat input[type=email], form.edit_boat input[type=text], form.edit_boat input[type=password] {
+form.new_boat input.text, form.new_boat input.title, form.new_boat input[type=email], form.new_boat input[type=text], form.new_boat input[type=password], form.edit_boat input.text, form.edit_boat input.title, form.edit_boat input[type=email], form.edit_boat input[type=text], form.edit_boat input[type=password], form.new_owner input.text, form.new_owner input.title, form.new_owner input[type=email], form.new_owner input[type=text], form.new_owner input[type=password], form.edit_owner input.text, form.edit_owner input.title, form.edit_owner input[type=email], form.edit_owner input[type=text], form.edit_owner input[type=password] {
   width: 300px;
 }
 /* line 50, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat textarea, form.edit_boat textarea {
+form.new_boat textarea, form.edit_boat textarea, form.new_owner textarea, form.edit_owner textarea {
   width: 390px;
   height: 250px;
 }
 /* line 6, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
-form.new_boat p, form.edit_boat p {
+form.new_boat p, form.edit_boat p, form.new_owner p, form.edit_owner p {
   margin-bottom: 0;
 }
 /* line 5, ../../../app/stylesheets/partials/_form.scss */
-form.new_boat .label, form.edit_boat .label {
+form.new_boat .label, form.edit_boat .label, form.new_owner .label, form.edit_owner .label {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 110px;
 }
 /* line 138, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html form.new_boat .label, * html form.edit_boat .label {
+* html form.new_boat .label, * html form.edit_boat .label, * html form.new_owner .label, * html form.edit_owner .label {
   overflow-x: hidden;
 }
 /* line 9, ../../../app/stylesheets/partials/_form.scss */
-form.new_boat .field, form.edit_boat .field {
+form.new_boat .field, form.edit_boat .field, form.new_owner .field, form.edit_owner .field {
   display: inline;
   float: left;
   margin-right: 0;
   width: 590px;
 }
 /* line 138, ../../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html form.new_boat .field, * html form.edit_boat .field {
+* html form.new_boat .field, * html form.edit_boat .field, * html form.new_owner .field, * html form.edit_owner .field {
   overflow-x: hidden;
 }
 

@@ -1,5 +1,6 @@
 Hba::Application.routes.draw do
   resources :boats
+  resources :owners
   
   root :to => 'boats#index'
   # The priority is based upon order of creation:

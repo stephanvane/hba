@@ -10,16 +10,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110314203533) do
+ActiveRecord::Schema.define(:version => 20110315232156) do
 
   create_table "boats", :force => true do |t|
-    t.string "name"
-    t.string "slug"
-    t.text   "description"
-    t.string "banner"
+    t.string  "name"
+    t.string  "slug"
+    t.text    "description"
+    t.string  "banner"
+    t.integer "owner_id"
   end
 
   add_index "boats", ["slug"], :name => "index_boats_on_slug", :unique => true
+
+  create_table "owners", :force => true do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+  end
 
   create_table "photos", :force => true do |t|
     t.string  "file"
