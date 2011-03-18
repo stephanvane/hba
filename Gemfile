@@ -5,7 +5,6 @@ gem 'sqlite3'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.4'
-  gem 'capybara'
   gem 'shoulda'
   gem 'factory_girl_rails'
 end
@@ -13,11 +12,14 @@ end
 gem 'haml'
 gem "compass", ">= 0.10.6"
 
+gem 'annotate-models'
+
 gem 'carrierwave'
 gem 'mini_magick'
 
 gem 'kaminari'
 gem 'jquery-rails'
+gem 'devise'
 
 # Use unicorn as the web server
 # gem 'unicorn'

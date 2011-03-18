@@ -19,4 +19,8 @@
         %h2 Menu
         = yield :menu
       #main
+        - if notice
+          .notice= notice
+        - if alert
+          .alert= alert
         = yield

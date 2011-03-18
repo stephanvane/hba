@@ -1,4 +1,7 @@
 class BoatsController < ApplicationController
+  
+  before_filter :authenticate_admin!
+  
   def index
     @all = Boat.select([:name, :slug]).all
     @boats = Boat.page params[:page]

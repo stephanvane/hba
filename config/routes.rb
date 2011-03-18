@@ -1,4 +1,6 @@
 Hba::Application.routes.draw do
+  devise_for :admins
+
   resources :boats
   resources :owners
   

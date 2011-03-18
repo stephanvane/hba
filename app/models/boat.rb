@@ -1,3 +1,16 @@
+# == Schema Information
+# Schema version: 20110315232156
+#
+# Table name: boats
+#
+#  id          :integer         not null, primary key
+#  name        :string(255)
+#  slug        :string(255)
+#  description :text
+#  banner      :string(255)
+#  owner_id    :integer
+#
+
 class Boat < ActiveRecord::Base
   validates_presence_of :name, :slug, :description
   validates_uniqueness_of :slug
