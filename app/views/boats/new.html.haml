@@ -1,15 +1,2 @@
 %h2 Add new boat
-= form_for @boat, :html => { :class => 'bp' } do |f|
-  .label
-    = f.label :name
-  .field
-    = f.text_field :name
-  .label
-    = f.label :slug
-  .field
-    = f.text_field :slug
-  .label
-    = f.label :description
-  .field
-    = f.text_area :description
-  = f.submit
+= render 'form'

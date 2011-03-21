@@ -10,8 +10,14 @@
     /[if lt IE 8]
       = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
       
+    -#= stylesheet_link_tag 'colorbox/colorbox.css'
+    -#= stylesheet_link_tag 'exposure/demo.css'
+      
     = javascript_include_tag :defaults
-    = javascript_include_tag 'pikachoose/lib/jquery.pikachoose.full.js'
+    -#= javascript_include_tag 'exposure/jquery.exposure.js'
+    -#= javascript_include_tag 'colorbox/jquery.colorbox.js'
+    
+    = yield :head
 
   %body.bp
     .container

@@ -4,6 +4,8 @@ Hba::Application.routes.draw do
   resources :boats
   resources :owners
   
+  resource :map
+  
   root :to => 'boats#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.

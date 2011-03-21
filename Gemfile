@@ -21,6 +21,8 @@ gem 'kaminari'
 gem 'jquery-rails'
 gem 'devise'
 
+gem 'geocoder'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -19,6 +19,8 @@ class Boat < ActiveRecord::Base
   has_many :photos
   belongs_to :owner
   accepts_nested_attributes_for :photos
+  geocoded_by :address
+  after_validation :geocode
   
   mount_uploader :banner, BannerUploader
   

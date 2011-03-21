@@ -1,0 +1,6 @@
+.mapsInfo
+  = link_to image_tag(boat.banner.url(:thumb)), boat
+  %h3= boat.name
+  %p= boat.description
+  %span.link= link_to 'More info', boat
+  %span.price 49 €
