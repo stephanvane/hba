@@ -1,9 +1,8 @@
-- content_for :menu do
-  %ul
-    %li= link_to 'Edit', :action => :edit
+%p= "Hi #{@owner.name}"
 
-%h2= @owner.name
+%h2 You have #{pluralize(@owner.boats.count, 'boat')}
 
 %ul
-  - @owner.boats.each do |boat|
-    %li= link_to boat.name, boat
+  - @owner.boats.each do |b|
+    %li= link_to b.name, b
+  

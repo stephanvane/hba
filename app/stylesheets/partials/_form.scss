@@ -1,12 +1,14 @@
-form.new_boat, form.edit_boat, form.new_owner, form.edit_owner {
-  @include blueprint-form;
-  @include blueprint-inline-form;
-  
-  .label {
-    @include column(3);
-  }
-  
-  .field {
-    @include column(15, true);
+form {
+  &.new_boat, &.edit_boat, &.new_owner, &.edit_owner, &.owner_new {
+    @include blueprint-form;
+    @include blueprint-inline-form;
+
+    .label {
+      @include column(3);
+    }
+
+    .field {
+      @include column(15, true);
+    }
   }
 }

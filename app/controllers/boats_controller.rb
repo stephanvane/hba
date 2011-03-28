@@ -1,6 +1,6 @@
 class BoatsController < ApplicationController
   
-  before_filter :authenticate_admin!
+  before_filter :authenticate_admin!, :only => [:new, :create, :edit, :update]
   
   def index
     @all = Boat.select([:name, :slug]).all
