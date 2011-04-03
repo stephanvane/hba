@@ -1,5 +1,6 @@
 ul#images {
   padding-left: 0;
+  width: 560px;
 }
  
 .galleria-container {
@@ -131,24 +132,8 @@ ul#images {
 }
 .galleria-thumb-nav-left,
 .galleria-thumb-nav-right {
-    cursor: pointer;
-    display: none;
-    background-position: -495px 5px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 40px;
-    width: 23px;
-    z-index: 3;
-    opacity: .8;
-    filter: alpha(opacity=80);
 }
-.galleria-thumb-nav-right {
-    background-position: -578px 5px;
-    border-right: none;
-    right: 0;
-    left: auto;
-}
+
 .galleria-thumbnails-container .disabled {
     opacity: .2;
     filter: alpha(opacity=20);

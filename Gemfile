@@ -23,6 +23,8 @@ gem 'devise'
 
 gem 'geocoder'
 
+gem 'event-calendar', :require => 'event_calendar'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

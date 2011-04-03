@@ -13,7 +13,7 @@ body {
   @include blueprint-utilities;
   @include blueprint-debug;
   @include blueprint-interaction;
-  background-image: image-url('bg.png');
+  background-color: #5480b7;
   
   .container {
     @include container;

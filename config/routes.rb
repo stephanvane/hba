@@ -2,10 +2,14 @@ Hba::Application.routes.draw do
   devise_for :admins
   devise_for :owners
   
-  resources :boats
+  resources :boats do
+    resource :calendar
+  end
   resource :map
   
-  resource :owner
+  resource :owners do 
+    get :home
+  end
   
   root :to => 'boats#index'
   # The priority is based upon order of creation:
